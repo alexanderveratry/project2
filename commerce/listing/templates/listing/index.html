@@ -1,0 +1,33 @@
+{% extends "listing/layout.html" %}
+
+
+{% block body %}
+
+<div style="float: left">
+
+
+
+    <h1> Auction Listings:   <a style="color: lightyellow" href='http://127.0.0.1:8000/' >Perfil</a>              </h1>
+
+        {% for listing in listing %}
+
+    <a href="{% url 'listing:listing' listing.id %}">
+        <h2>{{ listing.title }}, puja minima {{ listing.starting }} dolares </h2>
+
+
+            <img src="images/{{ listing.imagen }}", width="400"
+                 height="341"> </a>
+
+        {% endfor %}
+</div>
+
+
+
+<div style="float: right" >
+    <button > Crear subasta</button>
+</div>
+
+
+
+
+{% endblock %}

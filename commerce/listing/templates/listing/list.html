@@ -1,0 +1,25 @@
+{% extends "listing/layout.html" %}
+
+{% block body %}
+
+<h1>{{ listing.title }}</h1>
+<ul>
+
+    <li>title: {{ listing.title }} </li>
+    <li>description: {{ listing.description }}</li>
+    <li>starting: {{ listing.starting }} $</li>
+
+</ul>
+
+    <hr>
+
+<img src="images/{{ listing.imagen }}", width="400"
+     height="341">
+
+<hr>
+
+<p>  {{ listing.comentarios }} </p>
+
+ <a href={%  url 'listing:index' %}> ver listas   </a>
+
+{% endblock %}

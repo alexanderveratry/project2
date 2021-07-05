@@ -1,0 +1,22 @@
+body {
+    color: black;
+background-color: lightblue;
+}
+h1 {
+background-color: darkslateblue;
+}
+p {
+color: lightgoldenrodyellow;
+}
+
+li {
+    font-family: "Arial Black";
+    font-size: x-large ;
+   color: red;
+    padding: 20px;
+
+}
+
+
+
+
